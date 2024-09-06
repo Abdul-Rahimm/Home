@@ -33,16 +33,39 @@ const NavBar = () => {
       <div className="bg-red-500 md:flex md:items-center justify-between">
         {/* below div contains our Logo which is our name */}
         <div className="bg-green-500">
-          <div className="md:py-5 md:block">
-            <h2 className="text-2xl font-bold">Abdul Rahim</h2>
+          <div>
+            <div className="md:py-5 md:block">
+              <h2 className="text-2xl font-bold">Abdul Rahim</h2>
+            </div>
+            <div className="md:hidden">
+              <button>
+                {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* below div contains home about and projects */}
+        {/* below div contains home about projects and theme toggle button*/}
         <div className="bg-blue-400 md:flex md:space-x-6">
           {navItems.map((items, index) => {
             return <a key={index}>{items.label}</a>;
           })}
+
+          {currentTheme === "dark" ? (
+            <button
+              onClick={() => setTheme("light")}
+              className="bg-slate-100 p-2 rounded-xl"
+            >
+              <RiSunLine size={20} color="black" />
+            </button>
+          ) : (
+            <button
+              onClick={() => setTheme("dark")}
+              className="bg-slate-100 p-2 rounded-xl"
+            >
+              <RiMoonFill size={20} />
+            </button>
+          )}
         </div>
       </div>
     </header>
