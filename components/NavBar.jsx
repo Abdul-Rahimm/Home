@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
@@ -30,9 +29,9 @@ const NavBar = () => {
 
   return (
     <header className="w-full mx-auto px-4 bg-white shadow fixed top-0 z-50 dark:bg-stone-900 dark:border-b dark:border-stone-600">
-      <div className="bg-red-500 md:flex md:items-center justify-between">
+      <div className=" md:flex md:items-center justify-between">
         {/* below div contains our Logo which is our name */}
-        <div className="bg-green-500">
+        <div className="">
           <div>
             <div className="md:py-5 md:block">
               <h2 className="text-2xl font-bold">Abdul Rahim</h2>
@@ -46,7 +45,7 @@ const NavBar = () => {
         </div>
 
         {/* below div contains home about projects and theme toggle button*/}
-        <div className="bg-blue-400 md:flex md:space-x-6">
+        <div className=" md:flex md:space-x-6">
           {navItems.map((items, index) => {
             return <a key={index}>{items.label}</a>;
           })}
