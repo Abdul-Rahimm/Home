@@ -53,42 +53,49 @@ const NavBar = () => {
         </div>
 
         {/* below div contains home about projects and theme toggle button*/}
-        <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-          {navItems.map((item, idx) => {
-            return (
-              <Link
-                key={idx}
-                to={item.page}
-                className={
-                  "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
-                }
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                onClick={() => setNavbar(!navbar)}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-
-          {currentTheme === "dark" ? (
-            <button
-              onClick={() => setTheme("light")}
-              className="bg-slate-100 p-2 rounded-xl"
-            >
-              <RiSunLine size={20} color="black" />
-            </button>
-          ) : (
-            <button
-              onClick={() => setTheme("dark")}
-              className="bg-slate-100 p-2 rounded-xl"
-            >
-              <RiMoonFill size={20} />
-            </button>
-          )}
+        <div>
+          <div
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
+          >
+            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              {navItems.map((item, idx) => {
+                return (
+                  <Link
+                    key={idx}
+                    to={item.page}
+                    className={
+                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
+                    }
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+              {currentTheme === "dark" ? (
+                <button
+                  onClick={() => setTheme("light")}
+                  className="bg-slate-100 p-2 rounded-xl"
+                >
+                  <RiSunLine size={25} color="black" />
+                </button>
+              ) : (
+                <button
+                  onClick={() => setTheme("dark")}
+                  className="bg-slate-100 p-2 rounded-xl"
+                >
+                  <RiMoonFill size={25} />
+                </button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </header>

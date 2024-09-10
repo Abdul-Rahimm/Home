@@ -16,7 +16,7 @@ const Footer = () => {
           © 2023 Abdul Rahim<a href="/" className="hover:underline"></a>
         </div>
 
-        <div className="flex flex-row items-center justify-center space-x-2 mb-1">
+        <div className="flex flex-row items-center justify-center space-x-2 mb-1 pt-1 md:pt-0">
           <a
             href="https://github.com/Abdul-Rahimm"
             rel="noreferrer"
