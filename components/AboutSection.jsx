@@ -44,25 +44,26 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I am in my Final year of BS in Computer Science from Fast Nuces.
+              Currently, I am in my Final year of Bachelors in Computer Science
+              from Fast Nuces and have a wonderful time building software at
+              Cipher Impact.
             </p>
             <br />
             <p>
               I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              From reading, playing sports, traveling, to public speaking, I am
+              always seeking new experiences and love to keep myself engaged by
+              learning new things.
             </p>
             <br />
             <p>
-              I believe that you should{" "}
+              I believe that one should{" "}
               <span className="font-bold text-teal-500">
                 never stop growing
               </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+              and that&#39;s what I strive to do. I am a firm believer in
+              leading by example and always try to most critically assess my own
+              weaknesses and character. 🙂
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -79,13 +80,6 @@ const AboutSection = () => {
                 );
               })}
             </div>
-            {/* <Image
-              src="/preview.webp"
-              alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            /> */}
           </div>
         </div>
       </div>
