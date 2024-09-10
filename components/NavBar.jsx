@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { Link } from "react-scroll/modules";
+
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
@@ -28,16 +30,22 @@ const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header className="w-full mx-auto px-4 bg-white shadow fixed top-0 z-50 dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 sm:px-20 bg-white shadow fixed top-0 z-50 dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className=" md:flex md:items-center justify-between">
         {/* below div contains our Logo which is our name */}
-        <div className="">
-          <div>
-            <div className="md:py-5 md:block">
-              <h2 className="text-2xl font-bold">Abdul Rahim</h2>
-            </div>
+        <div>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <Link to="home">
+              <div className="container flex items-center space-x-2">
+                <h2 className="text-2xl font-bold">Abdul Rahim</h2>
+              </div>
+            </Link>
+
             <div className="md:hidden">
-              <button>
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => setNavbar(!navbar)}
+              >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
               </button>
             </div>
@@ -45,9 +53,25 @@ const NavBar = () => {
         </div>
 
         {/* below div contains home about projects and theme toggle button*/}
-        <div className=" md:flex md:space-x-6">
-          {navItems.map((items, index) => {
-            return <a key={index}>{items.label}</a>;
+        <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          {navItems.map((item, idx) => {
+            return (
+              <Link
+                key={idx}
+                to={item.page}
+                className={
+                  "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
+                }
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={() => setNavbar(!navbar)}
+              >
+                {item.label}
+              </Link>
+            );
           })}
 
           {currentTheme === "dark" ? (
