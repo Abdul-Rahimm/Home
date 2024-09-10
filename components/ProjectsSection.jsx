@@ -9,7 +9,7 @@ const projects = [
     name: "Collective Airline Index",
     description:
       "Compare and constrast your choices from different Airline options before booking your flight. Storage is built using self-developed Data structure: Hash-map based on 2D linked-list",
-    image: "/cia.png",
+    image: "https://next-ecommerce-rahim.s3.amazonaws.com/1725967192163.png",
     github:
       "https://github.com/Abdul-Rahimm/Collective-Airline-Index---DS-project",
     link: "",
@@ -18,7 +18,7 @@ const projects = [
     name: "Journey @ Leetcode",
     description:
       "This repository gives a sneek peak into my passion for solving complex data structure and algorithms at Leetcode",
-    image: "/leetcode.png",
+    image: "https://next-ecommerce-rahim.s3.amazonaws.com/1725967199128.png",
     github: "https://github.com/Abdul-Rahimm/LeetCode_2024",
     link: "",
   },
@@ -26,7 +26,7 @@ const projects = [
     name: "Full Stack E-commerce Store",
     description:
       "This marks my first implementation of a Full Stack MERN app using industry best practices. Utilizes tools such as AWS S3, G-Auth etc",
-    image: "/E-commerce.png",
+    image: "https://next-ecommerce-rahim.s3.amazonaws.com/1725967204701.png",
     github: "https://github.com/Abdul-Rahimm/E-commerce-store",
     link: "",
   },
@@ -34,7 +34,7 @@ const projects = [
     name: "Aora ",
     description:
       "Learned the Fundamentals of React-Native through this project. Utilized expo, nativewind, animatable and Appwrite",
-    image: "/aora1.png",
+    image: "https://next-ecommerce-rahim.s3.amazonaws.com/1725967169186.png",
     github: "https://github.com/Abdul-Rahimm/Learning-react-Native---JSM",
     link: "",
   },
