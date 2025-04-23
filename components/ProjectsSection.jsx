@@ -15,7 +15,7 @@ const projects = [
     link: "",
   },
   {
-    name: "Journey @ Leetcode",
+    name: "Journey of 900+ @ Leetcode",
     description:
       "This repository gives a sneek peak into my passion for solving complex data structure and algorithms at Leetcode",
     image: "https://next-ecommerce-rahim.s3.amazonaws.com/1725967199128.png",
@@ -23,9 +23,9 @@ const projects = [
     link: "",
   },
   {
-    name: "Full Stack E-commerce Store",
+    name: "Full Stack Customizable Web-App for SMBs",
     description:
-      "This marks my first implementation of a Full Stack MERN app using industry best practices. Utilizes tools such as AWS S3, G-Auth etc",
+      "This marks my first implementation of a Full Stack MERN app using core fundamentals. Utilizes tools such as AWS S3, G-Auth etc",
     image: "https://next-ecommerce-rahim.s3.amazonaws.com/1725967204701.png",
     github: "https://github.com/Abdul-Rahimm/E-commerce-store",
     link: "",
